@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif; 
+}
+
+html {
+    font-size: 62.5%;
+    color: #fff;
+}
+
+body{
+    background: url(./images/bg-enchanted.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+  
+}
+
+
+a {
+    color: inherit;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+i {
+    margin-right: 0.5rem;
+    color: rgb(199, 24, 161);
+}
+
+a:hover {
+    color: rgb(150, 64, 230);
+   
+}
+
+span {
+    display: none;
+}
+
+ul {
+    padding: 0; 
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    flex-grow: 1; 
+}
+
+li {
+    margin-bottom: 0.4rem; 
+    margin-left: 1rem;
+    margin: 0 auto;
+}
+
+.side-nav {
+    width: 130px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 15px; 
+    background: rgba(135, 77, 164, 0.2); 
+    backdrop-filter: blur(2px);
+    display: flex; 
+    flex-direction: column;
+    transition: width 0.5s ease-in-out;
+}
+
+.user {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem; 
+    border-radius: 8px;
+}
+
+.user h2 {
+    white-space: nowrap;
+    display: none;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.user p {
+    display: none;
+}
+
+.user-img {
+    margin-left: 0; 
+}
+
+.side-nav:hover {
+    width: 250px;
+      overflow-y: auto;
+     
+
+
+  
+
+}
+
+.side-nav::-webkit-scrollbar{
+   background-color:transparent;
+   height: 8px;
+   width: 8px;
+}
+.side-nav::-webkit-scrollbar-corner{
+   background-color:transparent;
+   
+}
+
+
+.side-nav:hover span
+ {
+    display: block;
+    justify-content: flex-start;
+}
+
+.side-nav:hover .user h2{
+    display: block;
+    font-size: 1rem;
+}
+
+.side-nav:hover .user p{
+  display: inline-block;
+}
+
+.side-nav:hover ul li{
+display: flex;
+margin-left: 0.2rem;
+}
+
+.main{
+    margin-left: 200px;
+    position: relative;
+}
+
+
